@@ -1,248 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
-  <title>مدرسة القديس بولس - نتيجة الطالب</title>
-  <link rel="icon" type="image/png" href="https://iili.io/qfQp4nf.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                        url('https://lh3.googleusercontent.com/gps-cs-s/AHVAwercxH3ewqH4kUMZUF9ds-QMLYXuksW_BlCAtqQnZlWmFAv7I1yG-FdU-r_Lkqoa1LU1jo1vIjnHga_HoPrDrX-4aAv_EFBH8n3hLNqJM3tZca1NRHD-Kp6lmi9EHWEinf_6w9E=s1360-w1360-h1020-rw');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin: 0;
-      min-height: 100vh;
-      padding:15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .card {
-      background:white;
-      padding:30px 20px;
-      border-radius:15px;
-      box-shadow:0 10px 25px rgba(0,0,0,0.2);
-      width:90vw;
-      max-width:600px;
-      text-align: center;
-    }
-
-    .logo{
-      width:70%;
-      max-width:500px;
-      height:auto;
-      margin: 0 auto 10px auto;
-      display:block;
-    }
-
-    .school-name{
-      font-size:22px;
-      font-weight:bold;
-      color:#2e86de;
-      margin-bottom:5px;
-    }
-
-    .year{
-      font-size:16px;
-      color:#555;
-      margin-bottom:20px;
-    }
-
-    h2{
-      text-align:center;
-      margin-bottom:20px;
-      color:#333;
-    }
-
-    select, input, button {
-      width: 100%;
-      padding: 12px;
-      margin: 8px 0;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      text-align: center;
-      font-size: 30px;
-    }
-
-    button{
-      background:#7eea66;
-      color:black;
-      cursor:pointer;
-      font-size: 18px;
-      transition:0.3s;
-      border:none;
-    }
-
-    button:hover{
-      background:#45e123;
-    }
-
-    .backBtn{
-      background:#888;
-      margin-top:10px;
-    }
-
-    .backBtn:hover{
-      background:#666;
-    }
-
-    .error{
-      color:red;
-      margin-top:10px;
-      text-align:center;
-    }
-
-    table{
-      width:100%;
-      border-collapse:collapse;
-      margin-top:15px;
-      direction: rtl;
-      font-size: 30px;
-    }
-
-    td{
-      padding:8px;
-      border-bottom:1px solid #eee;
-    }
-
-    td:first-child{
-      font-weight:bold;
-      text-align: right;
-      color:#444;
-    }
-
-    td:last-child{
-      text-align: left;
-    }
-
-    .spinner{
-      display:none;
-      margin-top:10px;
-      text-align: center;
-      font-size: 30px;
-    }
-
-    @media screen and (max-width: 600px){
-      .card{
-        width:95vw;
-        padding:40px 20px;
-        border-radius:10px;
-      }
-
-      .logo{
-        width:90%;
-        max-width:350px;
-      }
-
-      .school-name{
-        font-size:28px;
-      }
-
-      .year{
-        font-size:22px;
-      }
-
-      select, input, button{
-        font-size:20px;
-        padding:16px;
-      }
-
-      td{
-        font-size:20px;
-      }
-    }
-
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدرسة القديس بولس</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="card" id="loginBox">
-  <img src="https://iili.io/qfQp4nf.png" class="logo">
-  <div class="school-name"> مدرسة القديس بولس للتعليم والتلمذة </div>
-  <div class="year">نتيجة العام الدراسي 2025 - 2026</div>
+<header class="main-header">
+  <div class="container">
+    <h1 class="logo">مدرسة القديس بولس</h1>
+    <nav class="nav">
+      <a href="index.html">الرئيسية</a>
+      <a href="about.html">من نحن</a>
+      <a href="contact.html">اتصل بنا</a>
+    </nav>
+  </div>
+</header>
 
-  <select id="sheet">
-    <option value="السنة الاولى">السنة الاولى</option>
-    <option value="السنة الثانية">السنة الثانية</option>
-    <option value="السنة الثالثة">السنة الثالثة</option>
-    <option value="السنة الرابعة">السنة الرابعة</option>
-    <option value="السنة الخامسة">السنة الخامسة</option>
-  </select>
+<section class="hero">
+  <div class="container">
+    <h2>أهلاً بكم في مدرسة القديس بولس</h2>
+    <p>مدرستنا في خدمة التعليم والتنمية الروحية للطلاب</p>
+  </div>
+</section>
 
-  <input type="email" id="username" placeholder="البريد الإلكتروني" autocomplete="username">
-  <input type="password" id="password" placeholder="كلمة المرور" autocomplete="current-password">
-  <button onclick="login()"> <h2>عرض النتيجة </h2> </button>
-  
-  <div class="spinner" id="spinner">⏳ جاري التحميل...</div>
-  <div class="error" id="msg"></div>
-</div>
+<section class="features container">
+  <div class="card">
+    <h3>الرؤية</h3>
+    <p>توفير تعليم متميز لجميع الطلاب بأسلوب عصري.</p>
+  </div>
+  <div class="card">
+    <h3>الرسالة</h3>
+    <p>تنمية مهارات الطلاب وإعدادهم للمستقبل.</p>
+  </div>
+  <div class="card">
+    <h3>الأنشطة</h3>
+    <p>أنشطة مدرسية ورياضية وثقافية متنوعة.</p>
+  </div>
+</section>
 
-<div class="card" id="resultBox" style="display:none">
-  <img src="https://iili.io/qfQp4nf.png" class="logo">
-  <div class="school-name"> مدرسة القديس بولس للتعليم والتلمذة </div>
-  <h1 id="welcomeMsg"></h1>
-  <table id="resultTable"></table>  
-  <button class="backBtn" onclick="back()"><h2>تسجيل الخروج</h2></button>
-</div>
+<footer class="footer container">
+  <p>© 2026 مدرسة القديس بولس</p>
+</footer>
 
-<script>
-function login(){
-  var sheet = document.getElementById("sheet").value;
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("password").value;
-
-  document.getElementById("spinner").style.display="block";
-  document.getElementById("msg").innerHTML="";
-
-  google.script.run
-    .withSuccessHandler(function(res){
-      document.getElementById("spinner").style.display="none";
-      if(res.status){
-        document.getElementById("loginBox").style.display="none";
-        document.getElementById("resultBox").style.display="block";
-
-        var firstName = res.data["الإسم"].split(" ")[0];
-        document.getElementById("welcomeMsg").innerHTML = "مرحبًا " + firstName + " 👋";
-
-        var table = "";
-
-        // البيانات الأساسية
-        table += `<tr><td>الإسم</td><td>${res.data["الإسم"]}</td></tr>`;
-        table += `<tr><td>كود الطالب</td><td>${res.data["كود الطالب"]}</td></tr>`;
-        table += `<tr><td>السنة الدراسية</td><td>${res.data["السنة الدراسية"]}</td></tr>`;
-
-        // فاصل "النتيجة"
-        table += `<tr><td colspan="2" style="text-align:center; color:red; font-weight:bold; font-size:28px; padding-top:10px;">النتيجة</td></tr>`;
-
-        // عرض باقي النتائج (المواد)
-        for(var key in res.data){
-          if(key !== "الإسم" && key !== "كود الطالب" && key !== "السنة الدراسية"){
-            table += `<tr><td>${key}</td><td>${res.data[key]}</td></tr>`;
-          }
-        }
-
-        document.getElementById("resultTable").innerHTML = table;
-      } else {
-        document.getElementById("msg").innerHTML = res.message;
-      }
-    })
-    .withFailureHandler(function(err){
-      document.getElementById("spinner").style.display="none";
-      document.getElementById("msg").innerHTML = "حدث خطأ في الاتصال";
-    })
-    .checkLogin(sheet, username, password);
-}
-
-function back(){
-  document.getElementById("resultBox").style.display="none";
-  document.getElementById("loginBox").style.display="block";
-}
-</script>
 </body>
 </html>
