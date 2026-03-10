@@ -8,42 +8,56 @@
 </head>
 <body>
 
+<!-- Header / Navigation -->
 <header class="main-header">
   <div class="container">
-    <h1 class="logo">مدرسة القديس بولس</h1>
-    <nav class="nav">
-      <a href="index.html">الرئيسية</a>
-      <a href="about.html">من نحن</a>
-      <a href="contact.html">اتصل بنا</a>
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo.png" alt="لوجو المدرسة">
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="activities.html">الأنشطة</a></li>
+        <li><a href="news.html">الأخبار</a></li>
+        <li><a href="teachers.html">المعلمين</a></li>
+        <li><a href="gallery.html">المعرض</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+      <button class="nav-toggle">☰</button>
     </nav>
   </div>
 </header>
 
+<!-- Hero Section -->
 <section class="hero">
   <div class="container">
-    <h2>أهلاً بكم في مدرسة القديس بولس</h2>
+    <h1>أهلاً بكم في مدرسة القديس بولس</h1>
     <p>مدرستنا في خدمة التعليم والتنمية الروحية للطلاب</p>
   </div>
 </section>
 
+<!-- Features Section -->
 <section class="features container">
-  <div class="card">
-    <h3>الرؤية</h3>
-    <p>توفير تعليم متميز لجميع الطلاب بأسلوب عصري.</p>
-  </div>
-  <div class="card">
-    <h3>الرسالة</h3>
-    <p>تنمية مهارات الطلاب وإعدادهم للمستقبل.</p>
-  </div>
-  <div class="card">
+  <div class="feature-card">
+    <img src="assets/images/activities.png" alt="أنشطة المدرسة">
     <h3>الأنشطة</h3>
-    <p>أنشطة مدرسية ورياضية وثقافية متنوعة.</p>
+    <p>أنشطة مدرسية ورياضية وثقافية متنوعة لجميع الطلاب.</p>
+  </div>
+  <div class="feature-card">
+    <img src="assets/images/teachers.png" alt="المعلمين">
+    <h3>المعلمين</h3>
+    <p>فريق من المعلمين المؤهلين وذوي الخبرة لتعليم الطلاب بأفضل طريقة.</p>
   </div>
 </section>
 
-<footer class="footer container">
-  <p>© 2026 مدرسة القديس بولس</p>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 مدرسة القديس بولس</p>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
